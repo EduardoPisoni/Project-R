@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Minha página</title>
+    
+    <script src="js/Contador.js"></script>
+    <script src="index.js"></script>
+    <!-- <script src="js/Funcoes.js"></script>
+    <script src="js/Cinema.js"></script>
+    <script src="js/Repeticao.js"></script> -->
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="load()">
+    <div style="text-align: center;">
+      <h1>Contador</h1>
+      <div>
+        <input id="inputInicial" type="number" placeholder="Valor inicial" value="5"/>
+        <br>
+        <input id="inputFinal" type="number" placeholder="Valor final" value="0"/>
+      </div>
+      <br>
+      <button onclick="startContador()">
+        Contador 1
+      </button>
+      <button onclick="startContador2()">
+        Contador 2
+      </button>
+      <div id="contadorDiv">
+      </div>
+      <h2 id="contador2Div">
+      </h2>
+      <h2 id="mensagem"></h2>
+    </div>
+  </body>
+</html>

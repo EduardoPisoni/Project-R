@@ -1,0 +1,219 @@
+CURSO DE JS
+
+0 - OBSERVAÇÕES
+Case sensitive
+; no final da linha
+
+1 - Mostrar dados no console
+
+Chrome F12 -> Console
+função: console.log()
+
+Escrita:
+()  função
+{}  bloco de código
+
+2 - Tipos de dados
+
+|  Como são utilizados     |   Nome     |  Descrição
+|  "Texto" 'Texto' `Texto` |   string   |  Texto
+|  00  00.0                |   number   |  números
+|  true  false             |   boolean  |  verdadeiro ou falso
+|  []                      |   array    |  vários dados indexados
+
+
+3 - Variáveis
+
+Declaração:
+var|let|const nome = valor
+
+var    ->  variável padrão, todo o código pode ver
+let    ->  variável de escopo, existe naquele contexto específico
+const  ->  constante, o valor não pode ser alterado
+
+Exemplos:
+
+var nomeDaVariavel = "valor 1"
+let outraVariavel  =  2
+const constante = ["valor 1", "valor 2"]
+
+
+4 - Operadores
+
+Atribuição
+=  variável recebe valor
+
+Aritméticos:
++  soma (numbers e strings)
+-  subtração
+*  multiplicação
+/  divisão
+
+Comparação:
+==   comparação de valor (..igual a..)
+===  comparação de valor e tipo
+!=   negação de comparação (..diferente de..)
+!==  negação de comparação e tipo
+
+<    menor que
+>    maior que
+<=   menor ou igual
+>=   maior ou igual
+
+Comparadores lógicos:
+&&   e   (isso e aquilo)
+||   ou  (isso ou aquilo)
+!    negação
+
+Incremento / Decremento
+++   valor + 1  (variavel++)
+--   valor - 1  (variavel--)
+
+
+5 - Condições
+
+Testes de condições feitos para executar uma parte específica do código
+
+if        se
+else      senão
+else if   senão se
+
+ex:
+if(valor == 1) {
+  essa comparação é verdadeira
+  valor é 1
+} else if(valor == 2) {
+  comparação anterior é falsa, essa é verdadeira
+  valor é 2
+} else {
+  nenhuma comparação anterior é verdadeira
+  valor não é 1 nem 2
+}
+
+
+6 - Laços de repetição
+
+Parte específica do código que é repetida de acordo com a condição
+
+for      para
+forEach  para cada
+while    enquanto
+
+ex:
+declaração de index; condição; incremento
+for(i=0; i<5; i++){
+  para i sendo inicialmente 0
+  testa se i é menor que 5
+  executa o código
+  incrementa i + 1
+  repete
+}
+
+array.forEach(função)
+
+while(valor != 5){
+  enquanto valor é diferente de 5
+  executa o código infinitamente até a condição ser falsa
+}
+
+
+==============
+
+7 - Funções
+
+Reaproveitar partes do código
+Tipos: Funções com nome, anônimas e arrow
+
+function     é o termo que declara uma função
+parâmetros   são valores enviados para a função
+return       é o termo que informa o que a função está retornando (não é obrigatório)
+
+Declarando função com nome e parâmetros:
+function nomeDaFuncao(parametros) {
+  return valor
+}
+
+Declarando arrow function:
+nomeDaFuncao = () => valor
+Implicitamente a função retorna "valor"
+
+--
+
+Chamando uma função:
+nomeDaFuncao(parametros)
+
+--
+
+ex:
+
+function soma(valor1, valor2){
+  return valor1 + valor2
+}
+let somando = soma(5, 7)
+// somando recebe 12
+
+--
+
+Callback:
+Função que executa após a execução de outra função
+
+===
+
+8 - Arrays
+
+[] define um Array
+Valores indexados, começa na posição 0
+
+Criar array:
+let meuArray = ["Coisa 1", 2, true]
+
+Ler array:
+Informando o index você recebe o valor
+meuArray[0]
+// "Coisa 1"
+
+forEach:
+Recebe uma função que será executada para cada um dos itens do array
+meuArray.forEach((item, index) => {
+  console.log(item, index)
+})
+
+
+===
+
+9 - Classes (POO)
+
+Engloba funções e variáveis num mesmo contexto
+Atributos e métodos
+
+objeto de uma classe é uma instância da classe, uma "cópia"
+
+Declarando um objeto de uma classe
+let nomeObjeto = new NomeClasse()
+// nomeObjeto agora tem acesso a todos os métodos e atributos da classe NomeClasse
+
+this.
+this referencia o contexto onde está
+. significa que você está acessando propriedades de um objeto
+
+constructor()
+função base de uma classe, executada automaticamente ao instanciar uma classe
+
+ex:
+
+// classe Celular tem atributos e métodos de um celular
+class Celular {
+  constructor(){
+    // atributo
+    this.numero = "51989562154"
+  }
+
+  // metodo
+  ligar() {
+    console.log("Ligando para: " + this.numero)
+  }
+}
+
+let objetoCelular = new Celular
+conosole.log(objetoCelular.ligar())
+// "Ligando para: 51989562154"
