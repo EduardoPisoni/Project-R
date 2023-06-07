@@ -1,0 +1,12 @@
+#contadorDiv {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#contador2Div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: red
+}
