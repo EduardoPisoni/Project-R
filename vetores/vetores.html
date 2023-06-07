@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Minha página</title>
+
+    <script src="VetoresClasse.js"></script>
+    <script src="vetores.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="load()">
+    <h1>Exercicio de vetores</h1>
+    <div>
+        <h2>Exercício 1</h2>
+        <p>Vetor de 12 posições; 
+        Ler valor X e Y;
+        Somar todos os valor encontrados entre as posições X e Y no vetor.
+        </p>
+        <label for="inputPosicaoInicial">Posição Inicial</label>
+        <input type="number" min="0" max="11" id="inputPosicaoInicial">
+        <br>
+        <label for="inputPosicaoFinal">Posição Final</label>
+        <input type="number" min="0" max="11" id="inputPosicaoFinal">
+        <br>
+        <button onclick="calcularIntervalo()">Calcular</button>
+        <br>
+        <div id="resultadoIntervalo"></div>
+    </div>
+</body>
+
+</html>
