@@ -134,8 +134,7 @@ function nomeDaFuncao(parametros) {
 }
 
 Declarando arrow function:
-nomeDaFuncao = () => valor
-Implicitamente a função retorna "valor"
+() => {}
 
 --
 

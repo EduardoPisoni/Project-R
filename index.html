@@ -1,36 +1,44 @@
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Minha página</title>
-    
-    <script src="js/Contador.js"></script>
-    <script src="index.js"></script>
-    <!-- <script src="js/Funcoes.js"></script>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <title>Minha página</title>
+
+  <script src="js/Contador.js"></script>
+  <script src="index.js"></script>
+  <!-- <script src="js/Funcoes.js"></script>
     <script src="js/Cinema.js"></script>
     <script src="js/Repeticao.js"></script> -->
 
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body onload="load()">
-    <div style="text-align: center;">
-      <h1>Contador</h1>
-      <div>
-        <input id="inputInicial" type="number" placeholder="Valor inicial" value="5"/>
-        <br>
-        <input id="inputFinal" type="number" placeholder="Valor final" value="0"/>
-      </div>
-      <br>
-      <button onclick="startContador()">
-        Contador 1
-      </button>
-      <button onclick="startContador2()">
-        Contador 2
-      </button>
-      <div id="contadorDiv">
-      </div>
-      <h2 id="contador2Div">
-      </h2>
-      <h2 id="mensagem"></h2>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home">
+  <h1>Aulas de Programação</h1>
+  <div class="aulas">
+    <h2>Classes</h2>
+    <div class="links">
+      <a href="contador/contador.html" style="background-color: #85C1E9;">
+        Contador
+      </a>
     </div>
-  </body>
+  </div>
+  <div class="aulas">
+    <h2>Vetores</h2>
+    <div class="links">
+      <a href="vetores/vetores.html" style="background-color: #76D7C4;">
+        Exercício 1
+      </a>
+      <a href="vetores/vetores2.html" style="background-color: #76D7C4;">
+        Exercício 2
+      </a>
+    </div>
+  </div>
+</body>
+
 </html>
